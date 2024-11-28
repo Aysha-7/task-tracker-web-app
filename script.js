@@ -7,7 +7,7 @@ function addTask() {
     const taskList = document.getElementById("taskList");
 
     const taskItem = document.createElement("li");
-    taskItem.innerHTML = ${taskText} <button class="delete" onclick="deleteTask(this)">Delete</button>;
+    taskItem.innerHTML = `${taskText} <button class="delete" onclick="deleteTask(this)">Delete</button>`;
 
     taskItem.onclick = function () {
       taskItem.classList.toggle("completed");
